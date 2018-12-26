@@ -1,0 +1,126 @@
+html, body, #root{
+    padding: 0;
+    margin: 0;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-color: #f0f8fb;
+}
+.main-container{
+    width: 900px;
+    height: 100vh;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+.game-info{
+    width: 150px;
+    margin: 0 50px;
+    float: left;
+}
+.game-remain-num{
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 30px;
+    color: #0d96c6;
+    text-align: center;
+}
+.game-box{
+    height: 300px;
+    width: 150px;
+    border: 1px solid #0CF;
+    border-radius: 0 0 20px 20px;
+    border-top: none;
+    overflow: hidden;
+    position: relative;
+}
+.game-score{
+    width: 150px;
+    background: #6CF;
+    position: absolute;
+    bottom: 0;
+    border-radius: 0 0 20px 20px;
+    transition: height .3s linear;
+}
+.game-init{
+    width: 150px;
+    height: 60px;
+    line-height: 60px;
+    border: 1px solid #0cf;
+    text-align: center;
+    margin-top: 30px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+
+.game-panel{
+    height:480px;
+    width:480px;
+    padding:10px;
+    overflow:hidden;
+    background:#b8e4f8;
+    box-shadow:0px 0px 20px #37c6f5;
+    float: left;
+}
+.game-unit{
+    height: 60px;
+    width: 60px;
+    float: left;
+    border-right: none;
+    border-top: none;
+    border-radius: 20px;
+    background: #b8e2f6;
+    border: 10px solid #c8e7f6;
+    box-shadow: -2px -2px 5px #37c6f5;
+    float: left;
+    position: relative;
+}
+.game-img{
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+}
+.game-img-bullet{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    transition: all 1s linear;
+    z-index: 99;
+}
+.game-img-bullet-right{
+    transform: rotate(180deg);
+}
+.game-img-bullet-top{
+    transform: rotate(90deg);
+}
+.game-img-bullet-bottom{
+    transform: rotate(-90deg);
+}
+
+@keyframes changeZoom{
+    0%{
+        transform: scale(1.04)
+    }
+    25%{
+        transform: scale(0.96)
+    }
+    50% {
+        transform: scale(1.02)
+    }
+    75% {
+        transform: scale(0.98)
+    }
+    100%{
+        transform: scale(1)
+    }
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: absolute;
+    left: 200px;
+    top: 200px;
+}
